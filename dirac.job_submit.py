@@ -119,7 +119,7 @@ for input_file in input_files:
     id = str(jobID) + "\n"
 
     with open('jobids.list', 'a') as f_id_log:
-        json.dump(id, f_id_log)
+        f_id_log.write(jobID.Value + '\n')
 
 
 
